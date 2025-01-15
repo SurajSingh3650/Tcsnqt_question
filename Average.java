@@ -12,5 +12,6 @@ public class Average {
         
 
         System.out.println("Average of array is "+avg);
+        System.out.println("this is for  this my git please ingore it");
     }
 }
