@@ -22,5 +22,20 @@ public class Reverse {
         for(int i=arr.length-1;i>=0;i--){
             System.out.print(arr[i]+" ");
         }
+
     }
+    static void reverseArray(int arr[], int n) {
+        int[] ans = new int[n];
+        for (int i = n - 1; i >= 0; i--) {
+           ans[n - i - 1] = arr[i];
+        }
+        printArray(ans, n);}
+
+        
+        static void printArray(int ans[], int n) {
+            System.out.print("Reversed array is:- \n");
+            for (int i = 0; i < n; i++) {
+               System.out.print(ans[i] + " ");
+            }
+         }
 }
