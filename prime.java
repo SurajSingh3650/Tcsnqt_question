@@ -17,7 +17,7 @@ public class prime {
         if(count>2){
             System.out.print("the numbers"+n+"is not a prime number");
         }else{
-            System.out.print("the numbers"+n+"is a prime number");
+            System.out.print("the numbers:"+n+"is a prime number");
         }
     }
 }
