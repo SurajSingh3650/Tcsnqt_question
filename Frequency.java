@@ -32,7 +32,7 @@ public class Frequency {
    
         int arr[] ={10,5,10,15,10,5};
         int n = arr.length;
-        countFreq(arr, n);  
+        countFreq2(arr);  
     }
   public static void countFreq(int arr[], int n)
   {
@@ -55,4 +55,20 @@ public class Frequency {
           System.out.println(arr[i] + " " + count);
       }
   }
-}
+
+  public static void countFreq2(int arr[]){
+    HashMap<Integer,Integer>hm=new HashMap<>();
+    for(int i=0;i<arr.length;i++){
+        if(hm.containsKey(arr[i])){
+            hm.put(arr[i],hm.get(arr[i])+1);
+        }
+        else{
+            hm.put(arr[i],1);
+        }
+
+    }
+    for(Map.Entry<Integer,Integer>entry:hm.entrySet()){
+    System.out.println(entry.getKey()+" "+entry.getValue());}
+    }
+  }
+
