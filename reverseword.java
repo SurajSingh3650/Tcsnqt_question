@@ -51,9 +51,6 @@ return st.toString();
     }
 
 
-public static String reverse2(String s){
-    
-}
 
 }
 
